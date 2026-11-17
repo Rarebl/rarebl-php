@@ -1,0 +1,42 @@
+{
+    "name": "rarebl/rarebl-php",
+    "description": "Rarebl signing SDK for PHP: build, verify and sign BTC, LTC, BCH, DASH, ETH and TRON transactions locally. Private keys never leave your machine.",
+    "type": "library",
+    "keywords": [
+        "rarebl",
+        "bitcoin",
+        "litecoin",
+        "dash",
+        "ethereum",
+        "tron",
+        "signing",
+        "sdk"
+    ],
+    "homepage": "https://docs.rarebl.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rarebl",
+            "homepage": "https://rarebl.com"
+        }
+    ],
+    "support": {
+        "docs": "https://docs.rarebl.com"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-gmp": "*"
+    },
+    "suggest": {
+        "ext-curl": "HTTP client (Rarebl\\Rarebl)",
+        "ext-sodium": "hosted-signing envelope (Rarebl\\Envelope)",
+        "ext-openssl": "hosted-signing envelope (Rarebl\\Envelope)",
+        "ext-secp256k1": "constant-time ECDSA signing (libsecp256k1 bindings), used automatically when loaded"
+    },
+    "autoload": {
+        "files": [
+            "src/Rarebl.php"
+        ]
+    },
+    "minimum-stability": "stable"
+}
