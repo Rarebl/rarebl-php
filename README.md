@@ -9,7 +9,7 @@ curl -fsSLO https://docs.rarebl.com/sdk/php/Rarebl.php
 echo "5784caa72a1c89abd6a386911cac6008d8726757de3456e2606ff986592c142c  Rarebl.php" | sha256sum -c -
 ```
 
-Checksums for all SDK files: `https://docs.rarebl.com/sdk/SHA256SUMS`. Then `require 'Rarebl.php';` (or map `Rarebl\` to the file in your autoloader; a Packagist package `rarebl/sdk` comes later). Check `php -m | grep -E 'gmp|curl'`.
+Checksums for all SDK files: `https://docs.rarebl.com/sdk/SHA256SUMS`. Then `require 'Rarebl.php';`. Or install it with Composer: `composer require rarebl/rarebl-php` (the same file, autoloaded). Check `php -m | grep -E 'gmp|curl'`.
 
 ## Send BTC
 
